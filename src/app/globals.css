@@ -1,0 +1,138 @@
+@import "tailwindcss";
+@import "./sniperthink.css";
+
+:root {
+  --primary-color: #17605c;
+  --secondary-color: #1c7873;
+  --accent-color: #0e9390;
+  --dark-blue: #023c40;
+  --light-blue: #14444a;
+  --background: #000000;
+  --foreground: #f8f8f8;
+  --gray-light: #1a1a1a;
+  --gray-medium: #333333;
+  --gray-dark: #666666;
+  --text-primary: #ffffff;
+  --text-secondary: #cccccc;
+}
+
+body {
+  background: var(--background);
+  color: var(--text-primary);
+  font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container-custom {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-custom {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-custom {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--text-primary);
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  transition: all 0.2s;
+  border: 1px solid var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(23, 96, 92, 0.1);
+}
+
+.section-padding {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.heading-xl {
+  font-size: 1.875rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-shadow: 0 0 10px rgba(14, 147, 144, 0.3);
+}
+
+@media (min-width: 768px) {
+  .heading-xl {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heading-xl {
+    font-size: 3rem;
+  }
+}
+
+.heading-lg {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+@media (min-width: 768px) {
+  .heading-lg {
+    font-size: 1.875rem;
+  }
+}
+
+.heading-md {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+@media (min-width: 768px) {
+  .heading-md {
+    font-size: 1.5rem;
+  }
+}
+
+.text-content {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
