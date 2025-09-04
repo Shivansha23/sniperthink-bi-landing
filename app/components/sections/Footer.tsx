@@ -2,6 +2,7 @@ import React from "react";
 import LegalDialog from "../ui/LegalDialog";
 import TermsOfUse from "../ui/TermsOfUse";
 import PrivacyPolicy from "../ui/PrivacyPolicy";
+import Image from "next/image";
 
 export const Footer: React.FC = () => {
   return (
@@ -12,10 +13,13 @@ export const Footer: React.FC = () => {
           {/* Logo & Description */}
           <div className="flex-1 flex flex-col gap-6">
             <div className="flex flex-col gap-4">
-              <img
-                src="images/logo.png"
+              <Image
+                src="/images/logo.png"
                 alt="SniperThink Logo"
+                width={160}
+                height={40}
                 className="w-36 md:w-40"
+                priority
               />
               <p className="text-sm text-gray-400 max-w-md">
                 SniperThink delivers clarity, automation, and AI-driven execution for fast-moving teams.
@@ -74,7 +78,7 @@ export const Footer: React.FC = () => {
                 rel="noopener noreferrer"
                 aria-label="Facebook"
               >
-                <img src="/images/facebook.svg" alt="Facebook" className="w-5 h-5 hover:opacity-80" />
+                <Image src="/images/facebook.svg" alt="Facebook" width={20} height={20} className="w-5 h-5 hover:opacity-80" />
               </a>
               <a
                 href="https://www.instagram.com/sniperthink/"
@@ -82,7 +86,7 @@ export const Footer: React.FC = () => {
                 rel="noopener noreferrer"
                 aria-label="Instagram"
               >
-                <img src="/images/insta.svg" alt="Instagram" className="w-5 h-5 hover:opacity-80" />
+                <Image src="/images/insta.svg" alt="Instagram" width={20} height={20} className="w-5 h-5 hover:opacity-80" />
               </a>
               <a
                 href="https://www.linkedin.com/company/sniperthink/"
@@ -90,7 +94,7 @@ export const Footer: React.FC = () => {
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
               >
-                <img src="/images/linkedin.svg" alt="LinkedIn" className="w-5 h-5 hover:opacity-80" />
+                <Image src="/images/linkedin.svg" alt="LinkedIn" width={20} height={20} className="w-5 h-5 hover:opacity-80" />
               </a>
             </div>
           </div>

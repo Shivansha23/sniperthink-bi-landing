@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { MessageCircle, Menu, X } from "lucide-react";
+import Image from "next/image";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -30,12 +31,13 @@ export default function Header() {
       <div className="max-w-full mx-auto flex items-stretch justify-between relative">
         {/* Logo */}
         <div className="flex items-center group cursor-pointer pl-0 sm:pl-2 md:pl-4 lg:pl-6 xl:pl-8">
-          <img 
+          <Image 
             src="/images/logo.svg" 
             alt="SniperThink Logo"
             width={371}
             height={44}
             className="flex-shrink-0 w-max sm:w-[150px] md:w-[200px] lg:w-max h-auto"
+            priority
           />
         </div>
 
