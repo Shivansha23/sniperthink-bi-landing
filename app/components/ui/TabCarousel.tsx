@@ -76,7 +76,7 @@ const TabCarousel: React.FC<TabCarouselProps> = ({
   return (
     <div className="relative overflow-hidden">
       {/* Tab Navigation */}
-      <div className="flex flex-wrap mb-8 rounded-full bg-black p-1.5 max-w-fit mx-auto border border-gray-700 shadow-md">
+      <div className="flex flex-wrap mb-8 rounded-full bg-black p-1.5 max-w-fit mx-auto shadow-md">
         {tabs.map((tab) => (
           <button
             key={tab.id}

@@ -10,18 +10,16 @@ const Hero = () => {
           <div className="order-2 lg:order-1 animate-fadeIn">
             <div className="max-w-2xl mx-auto lg:mx-0">
               <h1 className="heading-xl">
-                <span className="gradient-text">Say Hello </span>Lorem ipsum dolor sit amet.
+                <span className="gradient-text">Say Hello </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,    sed do eiusmod.
               </h1>
               <p className="text-lead">
                 Go from data to insights in minutes
               </p>
               <div className="flex flex-col sm:flex-row items-center gap-4 mt-6">
                 <Link href="#" className="contact-button w-full sm:w-auto text-center animate-glow">
-                  SIGN UP FOR FREE
-                </Link>
-                <Link href="#" className="btn-secondary w-full sm:w-auto text-center border border-[#1A6262] text-[#1A6262] hover:bg-[#1A6262] hover:bg-opacity-10 py-2 px-6 rounded-md">
                   WATCH OVERVIEW
                 </Link>
+                
               </div>
             </div>
           </div>

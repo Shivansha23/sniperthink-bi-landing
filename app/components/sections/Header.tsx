@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { MessageCircle, Menu, X } from "lucide-react";
-import Image from "next/image";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -31,13 +30,12 @@ export default function Header() {
       <div className="max-w-full mx-auto flex items-stretch justify-between relative">
         {/* Logo */}
         <div className="flex items-center group cursor-pointer pl-0 sm:pl-2 md:pl-4 lg:pl-6 xl:pl-8">
-          <Image 
+          <img 
             src="/images/logo.svg" 
             alt="SniperThink Logo"
             width={371}
             height={44}
             className="flex-shrink-0 w-max sm:w-[150px] md:w-[200px] lg:w-max h-auto"
-            priority
           />
         </div>
 
@@ -57,13 +55,7 @@ export default function Header() {
         </nav>
 
         {/* Desktop Buttons */}
-        <div className="hidden lg:flex items-center space-x-4">
-          <button
-            type="button"
-            className="text-gray-300 hover:text-[#91C499] hover:bg-[#1A6262]/10 px-4 py-2 rounded transition-all duration-300"
-          >
-            Sign In
-          </button>
+        <div className="hidden lg:flex items-center">
           <button
             type="button"
             className="bg-gradient-to-r from-[#E1A940] to-[#FF6700] hover:from-[#FF6700] hover:to-[#E1A940] text-white shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 px-4 py-2 rounded-[2rem]"
@@ -100,13 +92,6 @@ export default function Header() {
                 {item}
               </a>
             ))}
-            <button
-              type="button"
-              className="w-full text-gray-300 hover:text-[#91C499] hover:bg-[#1A6262]/10 px-4 py-2 rounded transition-all duration-300"
-              onClick={() => setMenuOpen(false)}
-            >
-              Sign In
-            </button>
             <button
               type="button"
               className="w-full bg-gradient-to-r from-[#E1A940] to-[#FF6700] hover:from-[#FF6700] hover:to-[#E1A940] text-white shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 px-4 py-2 rounded"
