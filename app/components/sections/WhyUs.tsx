@@ -14,9 +14,11 @@ export default function SniperThinkSection() {
             <p className="text-gray-300 mb-4">
               From fast deployment to full control, here's why teams choose us over the noise.
             </p>
-            <Button variant="link" className="text-[#91C499] hover:text-[#1A6262] p-0 font-medium">
-              Discover how SniperThink works <ArrowRight className="w-4 h-4 ml-1" />
-            </Button>
+            <div>
+              <Button variant="link" className="text-[#91C499] hover:text-[#1A6262] p-0 pl-0 ml-0 text-left font-medium">
+                Discover how SniperThink works <ArrowRight className="w-4 h-4 ml-1 inline-block" />
+              </Button>
+            </div>
           </div>
 
           {/* Scale Card */}
